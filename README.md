@@ -1,17 +1,3 @@
-# Angular QuickStart Source
-[![Build Status][travis-badge]][travis-badge-url]
-
-This repository holds the TypeScript source code of the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html),
-the foundation for most of the documentation samples and potentially a good starting point for your application.
-
-It's been extended with testing support so you can start writing tests immediately.
-
-**This is not the perfect arrangement for your application. It is not designed for production.
-It exists primarily to get you started quickly with learning and prototyping in Angular**
-
-We are unlikely to accept suggestions about how to grow this QuickStart into something it is not.
-Please keep that in mind before posting issues and PRs.
-
 ## Prerequisites
 
 Node.js and npm are essential to Angular development. 
@@ -51,14 +37,6 @@ xargs -a non-essential-files.txt rm -rf
 rm app/*.spec*.ts
 rm non-essential-files.txt
 ```
-
-##### Windows
-```shell
-for /f %i in (non-essential-files.txt) do del %i /F /S /Q
-rd .git /s /q
-rd e2e /s /q
-```
-
 ### Create a new git repo
 You could [start writing code](#start-development) now and throw it all away when you're done.
 If you'd rather preserve your work under source control, consider taking the following steps.
@@ -123,9 +101,6 @@ The QuickStart documentation doesn't discuss testing.
 This repo adds both karma/jasmine unit test and protractor end-to-end testing support.
 
 These tools are configured for specific conventions described below.
-
-*It is unwise and rarely possible to run the application, the unit tests, and the e2e tests at the same time.
-We recommend that you shut down one before starting another.*
 
 ### Unit Tests
 TypeScript unit-tests are usually in the `app` folder. Their filenames must end in `.spec`.
