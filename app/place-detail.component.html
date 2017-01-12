@@ -1,0 +1,10 @@
+<div *ngIf="place">
+    <h2>{{place.name}} details!</h2>
+    <div><label>id: </label>{{place.id}}</div>
+    <div>
+      <label>name: </label>
+      <input [(ngModel)]="place.name" placeholder="name"/>
+    </div>
+    <div><label> Tourist Attractions: </label> {{place.touristAttractions}}</div>
+    <button (click)="goBack()">Back</button>
+</div>
